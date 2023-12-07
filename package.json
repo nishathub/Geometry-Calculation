@@ -1,0 +1,16 @@
+{
+  "name": "geometry-genius-resources",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-tailwind": "npx tailwindcss -i ./assets/src/input.css -o ./assets/tail_output/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.6"
+  }
+}
