@@ -1,0 +1,51 @@
+@import "./pages/index";
+@import "./pages/about";
+@import "./pages/contact";
+@import "./abstracts/variables";
+@import "./components/buttons";
+@import "./layouts/headers";
+@import "./layouts/footers";
+@import "./mixins/responsive";
+@import "./mixins/mix_button";
+
+
+.body{
+    padding: 20px;
+    background-color: skyblue !important;
+    height: 100vh;
+}
+.temp{
+    
+    text-align: center;
+
+    .temp_heading {
+        color: $red;
+        text-align: center;
+        // align-items: center;
+    }
+
+    .temp_subheading{
+        color: $green;
+        text-align: center;
+        // align-items: center;
+    }
+    p{
+        font-size: 18px;
+        color: $grey;
+        text-align: center;
+    }
+}
+.new-section{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    h2{
+        padding: 5px 10px;
+        border: 2px solid black;
+        border-radius: 5px;
+        color: rgb(3, 3, 74);
+    }
+}

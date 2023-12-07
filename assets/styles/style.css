@@ -1,6 +1,2 @@
-/* src/styles/styles.css */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
-/* Your custom styles go here */
+.btn_1{height:20px;width:40px;border-radius:5px;padding:10px 20px;border:1px solid green;background-color:red}.btn_2{height:20px;width:40px;border-radius:5px;padding:10px 20px;border:1px solid #000;background-color:blue}.btn_3{height:20px;width:40px;border-radius:5px;padding:10px 20px;border:1px solid gray;background-color:#fff}.H_1{font-size:40px;font-family:"Times New Roman",Times,serif;font-weight:700;line-height:55px}.F_1{font-size:20px;line-height:30px;font-family:"Courier New",Courier,monospace}.body{background-color:skyblue !important}.body{padding:20px;height:100vh}.temp{text-align:center}.temp .temp_heading{color:red;text-align:center}.temp .temp_subheading{color:green;text-align:center}.temp p{font-size:18px;color:gray;text-align:center}.new-section{border-radius:20px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:10px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.new-section h2{padding:5px 10px;border:2px solid #000;border-radius:5px;color:#03034a}
+/*# sourceMappingURL=style.css.map */
