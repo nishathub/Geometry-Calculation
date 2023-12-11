@@ -1,0 +1,13 @@
+@import "../abstracts/variables";
+
+ @mixin card() {
+    padding: 30px;
+    background-color: $grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    border-radius: 8px;
+    gap: 30px;
+}

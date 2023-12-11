@@ -8,5 +8,8 @@
 }
 
 @mixin geometry_btn (){
-    
+    border-radius: 8px;
+    background: $button_bg;
+    width: 100%;
+    height: 56px;
 }

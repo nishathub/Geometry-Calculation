@@ -1,0 +1,70 @@
+@import '../../abstracts/variables';
+@import '../../mixins/responsive';
+@import '../../mixins/mix_font';
+@import '../../mixins/mix_button';
+@import '../../components/card';
+
+.single_box{
+    @include card;
+    width: 320px;
+    
+    
+    .image{
+        
+       
+    }
+    .item-name{
+        @include text_font(#414141, 25px, 700);
+        margin-bottom: 10px;
+    }
+    .formula, 
+    .collected_data,
+    .input_div{
+        @include text_font(#414141, 16px, 400);
+        margin-bottom: 10px;
+    }
+    .collected_data{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        #edit-input{
+            font-size: 18px;
+            &:hover{
+                color: rgb(37 99 235);
+            }
+        }
+
+    }
+    .input_div{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        input{
+            width: 65px;
+            height: 32px;
+            padding-left: 5px;
+            border-radius: 4px;
+            background: #F1F1F1;
+            font-size: 20px;
+        }
+        label{
+            @include text_font(#414141, 16px, 400);
+            margin-right: 10px
+        }
+        #submit-input{
+            font-size: 32px;
+            color: $button_bg;
+            &:hover{
+                color: rgb(37 99 235);
+            }
+            
+        }
+    }
+    .calculate_btn{
+        @include geometry_btn;
+        @include text_font(#fff, 20px, 700);
+        &:hover{
+            background-color: rgb(37 99 235);
+        }
+    }
+}

@@ -1,5 +1,6 @@
 @import "./pages/index/header";
 @import "./pages/index/body";
+@import "./pages/index/single_box";
 @import "./pages/index/result";
 @import "./abstracts/variables";
 @import "./components/buttons";
@@ -12,7 +13,7 @@
 .body{
     padding: 50px;
     background-color: rgb(56, 56, 56);
-    height: 100vh;
+    height: 100%;
 }
 .temp{
     

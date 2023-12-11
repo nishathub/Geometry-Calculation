@@ -1,27 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
     <!-- putting tailwind css at first and scss afterwards because scss will be the customized one -->
-    <link rel="stylesheet" href="../assets/tail_output/output.css"> 
-    <link rel="stylesheet" href="../assets/styles/style.css"> 
+    <link rel="stylesheet" href="../assets/tail_output/output.css">
+    <link rel="stylesheet" href="../assets/styles/style.css">
     <title>Home_page</title>
 </head>
-<body class="body h-screen">
-   <header class=" px-8 py-4 flex justify-between items-center">
-    <div class="heading-title">
-        <h2 id="first-line">Interactive</h2>
-        <h6 id="second-line">Geometry Genius</h6>
-    </div>
-    <div id="blog-button">
-        <button class="hover:bg-blue-600 duration-300">Blog</button>
-    </div>
-   </header>
-    
+
+<body class="body">
+    <header class=" px-8 py-4 flex justify-between items-center">
+        <div class="heading-title">
+            <h2 id="first-line">Interactive</h2>
+            <h6 id="second-line">Geometry Genius</h6>
+        </div>
+        <div id="blog-button">
+            <button class="hover:bg-blue-600 duration-300">Blog</button>
+        </div>
+    </header>
+    <main class="">
+        <div id="item-container" class="flex gap-2">
+            <section class="single_box">
+                <div class="image">
+                    <img src="../assets/images/triangle.png" alt="triangle">
+                </div>
+                <div class="data">
+                    <h4 class="item-name">Triangle</h4>
+                    <h6 class="formula">Area (A) = 0.5 * b * h</h6>
+                    <section class="collected_data">
+                        <p>b= <span id="triangle-base">4</span> cm h= <span id="triangle-height">6</span> cm</p>
+                        <button class="edit-input "><i id="edit-input" class="fa-regular fa-pen-to-square"></i></button>
+                    </section>
+                    <section class="input_div">
+                        <input class="" type="text" placeholder="b">
+                        <label for="">cm</label>
+                        <input class="" type="text" placeholder="h">
+                        <label for="">cm</label>
+                        <button><i id="submit-input" class=" fa-solid fa-square-check"></i></button>
+                    </section>
+                </div>
+                <button class="calculate_btn ">
+                    Calculate
+                </button>
+            </section>
+            <section class="single_box">
+                <div class="image">
+                    <img src="../assets/images/rectangle.png" alt="triangle">
+                </div>
+                <div class="data">
+                    <h4 class="item-name">Rectangle</h4>
+                    <h6 class="formula">Area (A) = w * l</h6>
+                    <section class="collected_data">
+                        <p>b= <span id="triangle-base">4</span> cm h= <span id="triangle-height">6</span> cm</p>
+                        <button class="edit-input "><i id="edit-input" class="fa-regular fa-pen-to-square"></i></button>
+                    </section>
+                    <section class="input_div">
+                        <input class="" type="text" placeholder="b">
+                        <label for="">cm</label>
+                        <input class="" type="text" placeholder="h">
+                        <label for="">cm</label>
+                        <button><i id="submit-input" class=" fa-solid fa-square-check"></i></button>
+                    </section>
+                </div>
+                <button class="calculate_btn ">
+                    Calculate
+                </button>
+            </section>
+            <section class="single_box">
+                <div class="image">
+                    <img src="../assets/images/parallelogram.png" alt="triangle">
+                </div>
+                <div class="data">
+                    <h4 class="item-name">Parallelogram</h4>
+                    <h6 class="formula">Area (A) = b * h</h6>
+                    <section class="collected_data">
+                        <p>b= <span id="triangle-base">4</span> cm h= <span id="triangle-height">6</span> cm</p>
+                        <button class="edit-input "><i id="edit-input" class="fa-regular fa-pen-to-square"></i></button>
+                    </section>
+                    <section class="input_div">
+                        <input class="" type="text" placeholder="b">
+                        <label for="">cm</label>
+                        <input class="" type="text" placeholder="h">
+                        <label for="">cm</label>
+                        <button><i id="submit-input" class=" fa-solid fa-square-check"></i></button>
+                    </section>
+                </div>
+                <button class="calculate_btn ">
+                    Calculate
+                </button>
+            </section>
+            <section class="single_box">
+                <div class="image">
+                    <img src="../assets/images/rhombus.png" alt="triangle">
+                </div>
+                <div class="data">
+                    <h4 class="item-name">Rhombus</h4>
+                    <h6 class="formula">Area (A) = 0.5 * d <sub>1</sub> * d <sub>2</sub></h6>
+                    <section class="collected_data">
+                        <p>b= <span id="triangle-base">4</span> cm h= <span id="triangle-height">6</span> cm</p>
+                        <button class="edit-input "><i id="edit-input" class="fa-regular fa-pen-to-square"></i></button>
+                    </section>
+                    <section class="input_div">
+                        <input class="" type="text" placeholder="b">
+                        <label for="">cm</label>
+                        <input class="" type="text" placeholder="h">
+                        <label for="">cm</label>
+                        <button><i id="submit-input" class=" fa-solid fa-square-check"></i></button>
+                    </section>
+                </div>
+                <button class="calculate_btn ">
+                    Calculate
+                </button>
+            </section>
+            <section class="single_box">
+                <div class="image">
+                    <img src="../assets/images/pentagon.png" alt="triangle">
+                </div>
+                <div class="data">
+                    <h4 class="item-name">Pentagon</h4>
+                    <h6 class="formula">Area (A) = 0.5 * p * b</h6>
+                    <section class="collected_data">
+                        <p>b= <span id="triangle-base">4</span> cm h= <span id="triangle-height">6</span> cm</p>
+                        <button class="edit-input "><i id="edit-input" class="fa-regular fa-pen-to-square"></i></button>
+                    </section>
+                    <section class="input_div">
+                        <input class="" type="text" placeholder="b">
+                        <label for="">cm</label>
+                        <input class="" type="text" placeholder="h">
+                        <label for="">cm</label>
+                        <button><i id="submit-input" class=" fa-solid fa-square-check"></i></button>
+                    </section>
+                </div>
+                <button class="calculate_btn ">
+                    Calculate
+                </button>
+            </section>
+            <section class="single_box">
+                <div class="image">
+                    <img src="../assets/images/ellipse.png" alt="triangle">
+                </div>
+                <div class="data">
+                    <h4 class="item-name">Ellipse</h4>
+                    <h6 class="formula">Area (A) = &Pi; ab</h6>
+                    <section class="collected_data">
+                        <p>b= <span id="triangle-base">4</span> cm h= <span id="triangle-height">6</span> cm</p>
+                        <button class="edit-input "><i id="edit-input" class="fa-regular fa-pen-to-square"></i></button>
+                    </section>
+                    <section class="input_div">
+                        <input class="" type="text" placeholder="b">
+                        <label for="">cm</label>
+                        <input class="" type="text" placeholder="h">
+                        <label for="">cm</label>
+                        <button><i id="submit-input" class=" fa-solid fa-square-check"></i></button>
+                    </section>
+                </div>
+                <button class="calculate_btn ">
+                    Calculate
+                </button>
+            </section>
+            
+        </div>
+        <div id="result-box" class="result-box">
+            <section class=" bg-red-400">
+                <h6 class="mb-6 underline decoration-black">Area Calculation</h6>
+                <ol id="result-list">
+                    <li class="flex justify-between px-8"><p>Triangle</p> <span>12cm<sup>2</sup></span> <button>Convert to m<sup>2</sup></button></li>
+                    <li class="flex justify-between px-8"><p>Triangle</p> <span>12cm<sup>2</sup></span> <button>Convert to m<sup>2</sup></button></li>
+                    <li class="flex justify-between px-8"><p>Triangle</p> <span>12cm<sup>2</sup></span> <button>Convert to m<sup>2</sup></button></li>
+                </ol>
+            </section>
+        </div>
+        
+    </main>
+
 </body>
+
 </html>
