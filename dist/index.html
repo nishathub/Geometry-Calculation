@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">    
     <!-- putting tailwind css at first and scss afterwards because scss will be the customized one -->
     <link rel="stylesheet" href="../assets/tail_output/output.css"> 
     <link rel="stylesheet" href="../assets/styles/style.css"> 
     <title>Home_page</title>
 </head>
 <body class="body h-screen">
-    <div class="temp ">
-        <h1 class="temp_heading">
-            Fi_Amanillah
-        </h1>
-        <h3 class="temp_subheading">
-            In the custody of Allah.
-        </h3>
-        <p>HTML Boiler Plate with full set up (scss, sass, postcss, tailwind etc.) editable to begin a project.</p>
-
+   <header class=" px-8 py-4 flex justify-between items-center">
+    <div class="heading-title">
+        <h2 id="first-line">Interactive</h2>
+        <h6 id="second-line">Geometry Genius</h6>
     </div>
-    <section class="new-section bg-rose-200 text-center mt-8 px-8 py-8">
-       <h2 class="text-green-100">In this project tailwind and scss are combined</h2> 
-       <h2 class="text-green-100">SCSS file has greater priority as it is placed after the tailwind css in the html link</h2> 
-    </section>
+    <div id="blog-button">
+        <button class="hover:bg-blue-600 duration-300">Blog</button>
+    </div>
+   </header>
+    
 </body>
 </html>

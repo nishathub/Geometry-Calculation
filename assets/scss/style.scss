@@ -1,6 +1,6 @@
-@import "./pages/index";
-@import "./pages/about";
-@import "./pages/contact";
+@import "./pages/index/header";
+@import "./pages/index/body";
+@import "./pages/index/result";
 @import "./abstracts/variables";
 @import "./components/buttons";
 @import "./layouts/headers";
@@ -10,8 +10,8 @@
 
 
 .body{
-    padding: 20px;
-    background-color: skyblue !important;
+    padding: 50px;
+    background-color: rgb(56, 56, 56);
     height: 100vh;
 }
 .temp{

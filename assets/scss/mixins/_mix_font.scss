@@ -1,0 +1,8 @@
+@mixin text_font ($color, $size, $weight) {
+    color: $color;
+    font-family: Inter;
+    font-size: $size;
+    font-style: normal;
+    font-weight: $weight;
+    line-height: normal;    
+}
