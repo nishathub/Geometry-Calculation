@@ -8,8 +8,9 @@
         background-color: pink;
         text-align: center;
         padding-top: 20px;
-        @include custom_responsive(0px, 576px){
-            width: 300px;      
+        @include custom_responsive(0px, 780px){
+            width: 300px;
+            margin: auto;
         }
         h6{
             font-size: 18px;
@@ -17,7 +18,7 @@
         }
         #result-list{
             li{
-                @include custom_responsive(0px, 576px){
+                @include custom_responsive(0px, 780px){
                     padding: 0px 5px;        
                 }
             }
