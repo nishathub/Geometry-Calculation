@@ -7,6 +7,9 @@
 .single_box{
     @include card;
     width: 320px;
+    @include custom_responsive(0px, 576px){
+        width: 300px;       
+    }
     
     
     .image{

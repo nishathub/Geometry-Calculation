@@ -8,11 +8,16 @@ main{
     margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 350px;
+    @include custom_responsive(0px, 780px){
+        grid-template-columns: 1fr; 
+        gap: 30px;       
+    }
     #item-container{
         border: 1px solid red;
         text-align: center;
         display: flex;
         flex-wrap: wrap;
         gap: 25px;
+        width: 100%;
     }
 }
