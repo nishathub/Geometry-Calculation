@@ -3,10 +3,13 @@
 @import '../../mixins/mix_font';
 
 body {
+
     header{
         border-radius: 8px;
         background: rgba(16, 144, 216, 0.10);
-
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         @include custom_responsive(0px, 576px){
             display: grid;
             grid-template-columns: 1fr;   
