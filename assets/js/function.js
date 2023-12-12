@@ -32,3 +32,16 @@ function addNewListItem (dataDiv, result){
     listItemNumber++;
     
 }
+
+function getRandomCode (){
+    // we made string to utilize the .length function
+    let numberString = parseInt(Math.random() * 1000000) + '';
+    let code;
+        if(numberString.length === 6){ // here we use the .length
+          let number = parseInt(numberString); // we make integer again
+           code = `#${number}`; // a 6 digit color code
+           return code;
+        } else {
+           return getRandomCode(); // return to avoid undefined value
+        }  
+}
