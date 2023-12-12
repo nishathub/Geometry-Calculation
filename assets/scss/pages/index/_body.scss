@@ -7,8 +7,8 @@
 main{ 
     margin-top: 50px;
     display: grid;
-    grid-template-columns: 1fr 350px;
-    @include custom_responsive(0px, 780px){
+    grid-template-columns: 1fr 400px;
+    @include custom_responsive(0px, 880px){
         grid-template-columns: 1fr; 
         gap: 30px;       
         align-items: center;
@@ -18,7 +18,7 @@ main{
         text-align: center;
         display: flex;
         flex-wrap: wrap;
-        gap: 25px;
+        gap: 20px;
         width: 100%;
         @include custom_responsive(0px, 780px){   
             justify-content: center;   

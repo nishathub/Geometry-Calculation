@@ -4,7 +4,7 @@ function addNewListItem (dataDiv, result){
     // creating a new list
     let newListItem = document.createElement('li');
     // adding classList
-    newListItem.classList.add('flex', 'justify-between', 'px-8', 'items-center');
+    newListItem.classList.add('flex', 'justify-between', 'items-center');
     // create Element that will be appended to the newListItem
     const paragraph = document.createElement('p');
     const span = document.createElement('span');
