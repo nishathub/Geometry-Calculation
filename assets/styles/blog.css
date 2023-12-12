@@ -6,14 +6,25 @@ body {
 }
 
 header {
+    max-width: 800px;
+    margin: auto;
     text-align: center;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
 }
 
 h2 {
     text-decoration: underline;
     font-size: 1.5rem;
     color: #4f46e5;
+}
+#home-button{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
 }
 
 main {
