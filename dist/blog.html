@@ -3,11 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- putting tailwind css at first and scss afterwards because scss will be the customized one -->
+      <!-- <link rel="stylesheet" href="../assets/tail_output/output.css"> -->
+      <!-- <link rel="stylesheet" href="../assets/styles/style.css"> -->
+      <link rel="stylesheet" href="../assets/styles/blog.css">
     <title>Blog</title>
 </head>
-<body class="">
-    <header>
-        <h2>Please find the questions and answers below :</h2>
+<body class="h-full bg-gray-400 p-8">
+    <header class="text-center">
+        <h2 class=" underline text-3xl">Please find the questions and answers below :</h2>
     </header>
+    <main>
+        <div class="answer-sheet border-2 flex flex-col gap-8">
+            <section class="single-answer border-2">
+                <h4 class="question bg-pink-200 mb-2">1. What is DOM and what is the purpose of DOM?</h4>
+                <h6 class="answer flex flex-col gap-2 border-2">
+                    <strong>DOM (Document Object Model):</strong>
+
+                    The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document as a tree of objects, where each object corresponds to a part of the document, such as elements, attributes, text, etc. The DOM provides a way for programs to manipulate the structure, style, and content of web documents.
+                    <strong>Purpose of DOM:</strong>
+
+                        <p><em><u>Dynamic Content Manipulation:</u></em> One of the primary purposes of the DOM is to enable dynamic content manipulation. With the DOM, you can dynamically modify the content and structure of a web page using programming languages like JavaScript.</p>
+                        <p><em><u>Interactive Web Pages:</u></em> The DOM allows web pages to become interactive. By responding to user actions, such as clicks or input, scripts can modify the DOM in real-time, updating the displayed content without requiring a full page reload.</p>
+                        
+                        <p><em><u>Cross-Browser Compatibility:</u></em> The DOM provides a standardized way to represent and interact with the structure of web documents. This helps ensure cross-browser compatibility, allowing developers to write code that works consistently across different browsers.</p>
+
+                        <p><em><u>Event Handling:</u></em> The DOM allows you to attach event listeners to elements on a web page. This enables the creation of interactive and responsive web applications by responding to user-generated events like clicks, keypress, etc.</p>
+                        <p><em><u>Dynamic Styling:</u></em> JavaScript can be used to modify the style of elements on a web page. This allows for dynamic styling changes based on user interactions or other conditions.</p>
+                        <p><em><u>Data Binding:</u></em>In frameworks like Angular, React, or Vue.js, the DOM is often used for data binding, where changes in the underlying data are automatically reflected in the user interface, and vice versa.</p>
+                    
+                        <p>In summary, the DOM serves as an interface that allows programs to interact with and manipulate the structure, content, and style of web documents. It plays a fundamental role in creating dynamic, interactive, and user-friendly web pages.</p>
+                    </h6>
+            </section>
+            <section class="single-answer border-2">
+                <h4 class="question bg-pink-200 mb-2">2. How will you select HTML elements using DOM? Name the DOM mehtods.</h4>
+                <h6 class="answer flex flex-col gap-2 border-2">
+                    <p>To select HTML elements using the DOM (Document Object Model), you can use various methods provided by the DOM API. Here are some common DOM methods for selecting elements:</p>
+                    <strong>Purpose of DOM:</strong>
+
+                        <p><em><u>getElementById</u></em></p>
+                        <p><em><u>getElementsByClassName</u></em> </p>
+                        <p><em><u>getElementsByTagName</u></em> </p>
+                        <p><em><u>getElementsByName</u></em></p>
+                        <p><em><u>querySelector</u></em></p>
+                        <p><em><u>parentNode</u></em></p>
+                        <p><em><u>childNodes</u></em></p>
+                        <p><em><u>querySelector in combination with nth-child</u></em></p>
+                        <p>These are just a few examples of the many methods available in the DOM API for selecting and manipulating HTML elements. The appropriate method to use depends on your specific requirements and the structure of your HTML document.</p>
+                    </h6>
+            </section>
+            <section class="single-answer border-2">
+                <h4 class="question bg-pink-200 mb-2">3. How will you select HTML elements using DOM? Name the DOM mehtods.</h4>
+                <h6 class="answer flex flex-col gap-2 border-2">
+                    <p>Event bubbling is a phase in the event propagation process in the Document Object Model (DOM) where an event triggered on a particular element is first captured by the innermost element and then propagated up the DOM hierarchy through its ancestors. In other words, the event starts from the target element that initiated it and bubbles up through its ancestors.</p>
+                    <strong>Steps of event bubbling :</strong>
+
+                        <p><em><u>Event Triggering</u></em></p>
+                        <p><em><u>Capturing phase</u></em> </p>
+                        <p><em><u>Target phase</u></em> </p>
+                        <p><em><u>Bubbling phase</u></em></p>
+                        <p>Here's an example in JavaScript :</p>
+                        <p>document.getElementById("outer").addEventListener("click", function () {
+                            console.log("Outer div clicked");
+                          }); <br>
+                          
+                          document.getElementById("inner").addEventListener("click", function () {
+                            console.log("Inner div clicked");
+                          });
+                          </p>
+                          <p>In this example, if you click on the inner div, both "Inner div clicked" and "Outer div clicked" will be logged to the console, demonstrating the event bubbling process.</p>
+                    </h6>
+            </section>
+            <section class="single-answer border-2">
+                <h4 class="question bg-pink-200 mb-2">4. What is a callback function and why will you use it?</h4>
+                <h6 class="answer flex flex-col gap-2 border-2">
+                    <p>A callback function is a function that is passed as an argument to another function and is executed after the completion of a specific task. The primary purpose of callback functions is to enable asynchronous behavior and to handle tasks that may take some time to complete. Callbacks are commonly used in programming languages like JavaScript, particularly in scenarios where the order of execution is not guaranteed or when you want to execute code after a certain task is completed.</p>
+                    <strong>Here are key reasons why callback functions are used:</strong>
+
+                        <p><em><u>Asynchronous Operations</u></em></p>
+                        <p><em><u>Event Handling</u></em> </p>
+                        <p><em><u>Modular and Reusable Code</u></em> </p>
+                        <p><em><u>Control Flow and Sequencing</u></em></p>
+                        <p><em><u>Higher-Order Functions</u></em></p>
+                        <p><em><u>Handling Asynchronous Data</u></em></p>
+                    </h6>
+            </section>
+        </div>
+    </main>
 </body>
 </html>

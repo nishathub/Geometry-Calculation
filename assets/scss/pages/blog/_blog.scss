@@ -1,0 +1,17 @@
+@import '../../abstracts/variables';
+@import '../../mixins/responsive';
+
+.answer-sheet{
+    width: 95vw;
+
+    .question{
+        font-size: 18px;
+        display: inline-flex;
+    }
+    .answer{
+        font-size: 16px;
+        u{
+            font-size: 18px;
+        }
+    }
+}

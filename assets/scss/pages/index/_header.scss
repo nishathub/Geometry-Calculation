@@ -4,7 +4,7 @@
 
 body {
 
-    header{
+    #index-header{
         border-radius: 8px;
         background: rgba(16, 144, 216, 0.10);
         display: flex;
@@ -15,13 +15,13 @@ body {
             grid-template-columns: 1fr;   
             gap: 20px;     
         }
-        h2{
+        #first-line{
         @include text_font (rgba(17, 17, 17, 0.8), 45px, 700);
         @include custom_responsive(0px, 540px){
             @include text_font (rgba(17, 17, 17, 0.8), 25px, 700);
         }
         }
-        h6{
+        #second-line{
         @include text_font (rgba(17, 17, 17, 0.8), 30px, 500);
         @include custom_responsive(0px, 540px){
             @include text_font (rgba(17, 17, 17, 0.6), 20px, 700);
