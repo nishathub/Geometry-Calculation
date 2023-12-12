@@ -11,6 +11,7 @@ function addNewListItem (dataDiv, result){
     const paragraph = document.createElement('p');
     const span = document.createElement('span');
     const button = document.createElement('button');
+    const deleteButton = document.createElement('i');
     // set sequential number
     numberSpan.innerText = listItemNumber + '.';
     // get item name from data div and set it to the paragraph
@@ -22,11 +23,14 @@ function addNewListItem (dataDiv, result){
     button.classList.add('convert-button');
     // set button innerText
     button.innerHTML = `Convert to m<sup>2</sup>`;
+    // add deletebutton classList
+    deleteButton.classList.add('remove-result', 'fa-solid', 'fa-xmark');
     // add paragraph, span and button to the new list
     newListItem.appendChild(numberSpan);
     newListItem.appendChild(paragraph);
     newListItem.appendChild(span);
     newListItem.appendChild(button);
+    newListItem.appendChild(deleteButton);
     // appendChild newListItem
     listBox.appendChild(newListItem);
     listItemNumber++;
